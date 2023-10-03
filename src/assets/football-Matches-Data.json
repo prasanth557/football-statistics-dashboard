@@ -1,0 +1,145 @@
+[
+    {
+      "competitionName": "Premier League",
+      "selectedCompetitionId":"1",
+      "matchday": 1,
+      "teams": {
+        "home": "Manchester United",
+        "away": "Manchester City"
+      },
+      "result": "2-1",
+      "kickoff_time": "2023-10-01 2:30:00"
+    },
+    {
+      "competitionName": "Premier League",
+      "selectedCompetitionId":"1",
+      "matchday": 1,
+      "teams": {
+        "home": "Real Madrid",
+        "away": "Manchester City"
+      },
+      "result": "1-0",
+      "kickoff_time": "2023-10-01 2:30:00"
+    },
+    {
+      "competitionName": "Premier League",
+      "selectedCompetitionId":"1",
+      "matchday": 1,
+      "teams": {
+        "home": "Manchester United",
+        "away": "Real Madrid"
+      },
+      "result": "2-1",
+      "kickoff_time": "2023-10-01 2:30:00"
+    },
+    {
+      "competitionName": "Premier League",
+      "selectedCompetitionId":"1",
+      "matchday": 2,
+      "teams": {
+        "home": "Manchester United",
+        "away": "Manchester City"
+      },
+      "result": "1-0",
+      "kickoff_time": "2023-10-01 2:30:00"
+    },
+    {
+      "competitionName": "Premier League",
+      "selectedCompetitionId":"1",
+      "matchday": 2,
+      "teams": {
+        "home": "Real Madrid",
+        "away": "Manchester City"
+      },
+      "result": "2-0",
+      "kickoff_time": "2023-10-01 2:30:00"
+    },
+    {
+      "competitionName": "Premier League",
+      "selectedCompetitionId":"1",
+      "matchday": 2,
+      "teams": {
+        "home": "Real Madrid",
+        "away": "Manchester City"
+      },
+      "result": "1-0",
+      "kickoff_time": "2023-10-01 2:30:00"
+    },
+    {
+      "competitionName": "La Liga",
+      "selectedCompetitionId":"2",
+      "matchday": 1,
+      "teams": {
+        "home": "Real Madrid",
+        "away": "Barcelona"
+      },
+      "result": "1-0",
+      "kickoff_time": "2023-09-12 20:00:00"
+    },
+    {
+      "competitionName": "La Liga",
+      "selectedCompetitionId":"2",
+      "matchday": 1,
+      "teams": {
+        "home": "Real Madrid",
+        "away": "Manchester United"
+      },
+      "result": "2-1",
+      "kickoff_time": "2023-09-13 20:00:00"
+    },
+    {
+      "competitionName": "La Liga",
+      "selectedCompetitionId":"2",
+      "matchday": 1,
+      "teams": {
+        "home": "Real Madrid",
+        "away": "Manchester City"
+      },
+      "result": "1-1",
+      "kickoff_time": "2023-09-20 21:00:00"
+    },
+    {
+      "competitionName": "Bundesliga",
+      "selectedCompetitionId":"3",
+      "matchday": 1,
+      "teams": {
+        "home": "Manchester United",
+        "away": "Real Madrid"
+      },
+      "result": "2-1",
+      "kickoff_time": "2023-10-01 4:30:00"
+    },
+    {
+      "competitionName": "Bundesliga",
+      "selectedCompetitionId":"3",
+      "matchday": 1,
+      "teams": {
+        "home": "Barcelona",
+        "away": "Real Madrid"
+      },
+      "result": "1-1",
+      "kickoff_time": "2023-10-01 4:30:00"
+    },
+    {
+      "competitionName": "Bundesliga",
+      "selectedCompetitionId":"3",
+      "matchday": 2,
+      "teams": {
+        "home": "Manchester United",
+        "away": "Real Madrid"
+      },
+      "result": "2-1",
+      "kickoff_time": "2023-10-01 4:30:00"
+    },
+    {
+      "competitionName": "Ligue 1",
+      "selectedCompetitionId":"4",
+      "matchday": 1,
+      "teams": {
+        "home": "Manchester United- 3",
+        "away": "Manchester City-3"
+      },
+      "result": "2-1",
+      "kickoff_time": "2023-10-01 4:30:00"
+    }
+  ]

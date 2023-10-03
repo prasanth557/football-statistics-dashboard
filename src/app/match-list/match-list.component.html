@@ -1,0 +1,40 @@
+<div class="routerLink" > 
+      <ul>
+        <li style="width: 250px; background-color: whitesmoke;"><a  [routerLink]="['/competitions']" routerLinkActive="active" >
+           Back to Search
+          </a></li>
+    </ul>
+</div>
+<div class="match-list">
+    <h2>Matches</h2>
+
+      <div class="mat-elevation-z8">
+        <table mat-table [dataSource]="dataSource" matSort (matSortChange)="sortData($event)" >
+
+       <!-- Teams -->
+       <ng-container matColumnDef="Teams">
+        <th mat-header-cell  *matHeaderCellDef > Teams </th>
+        <td mat-cell *matCellDef="let element"> Away : {{element.teams.away}} <br/><br/>Home :  {{element.teams.home}}  </td>
+      </ng-container>
+    
+      <!-- result -->
+      <ng-container matColumnDef="result">
+        <th mat-header-cell *matHeaderCellDef > Result </th>
+        <td mat-cell *matCellDef="let element"> {{element.result}} </td>
+      </ng-container>
+      
+      <!-- kickoff_time -->
+      <ng-container matColumnDef="kickoff_time">
+          <th mat-header-cell  mat-sort-header="kickoff_time"  *matHeaderCellDef > Kickoff Time </th>
+          <td mat-cell *matCellDef="let element"> {{element.kickoff_time }} </td>
+        </ng-container>
+      
+          <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+          <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        </table>
+      
+        <!-- <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]" aria-label="Select page of users"></mat-paginator> -->
+      </div>
+      
+  </div>
+  

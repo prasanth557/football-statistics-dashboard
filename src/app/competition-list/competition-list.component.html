@@ -1,0 +1,33 @@
+<div class="container ">
+    <div style="width:100%" >
+        <!-- <h2>Competitions</h2> -->
+        <div class="competition-list match-info ">
+        <div style="width:40%; text-align:left" flex>
+            <mat-form-field>
+                <mat-label>Select a Competition:</mat-label>
+                <mat-select [(ngModel)]="selectedCompetitionId" (selectionChange)="updateMatchesData($event.value)">
+                  <mat-option *ngFor="let competition of competetionList" [value]="competition.selectedCompetitionId">
+                    {{ competition.competitionName }}
+                  </mat-option>
+                </mat-select>
+              </mat-form-field>
+        </div>
+        <div style="width:40%;text-align:left" flex>
+            <mat-form-field>
+                <mat-label>Select a Matchday:</mat-label>
+                <!-- <input matInput type="number" [(ngModel)]="selectedMatchday" /> -->
+                <mat-select [(ngModel)]="selectedMatchday" >
+                    <mat-option *ngFor="let matchday of matchData" [value]="matchday">
+                      {{matchday }}
+                    </mat-option>
+                  </mat-select>
+              </mat-form-field>
+        </div>
+        <div style="width:20%" flex>
+            <button mat-raised-button color="primary" (click)="onSearch()">Search</button>
+        </div>
+    </div>
+  </div>
+</div>
+  
+  

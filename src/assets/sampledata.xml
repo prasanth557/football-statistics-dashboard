@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<matches>
+  <match>
+    <competition>Premier League</competition>
+    <selectedCompetitionId>1</selectedCompetitionId>
+    <matchday>1</matchday>
+    <teams>
+      <home>Manchester United</home>
+      <away>Manchester City</away>
+    </teams>
+    <result>2-1</result>
+    <kickoff_time>2023-10-01 14:30:00</kickoff_time>
+  </match>
+    <match>
+    <competition>Premier League</competition>
+    <selectedCompetitionId>1</selectedCompetitionId>
+    <matchday>1</matchday>
+    <teams>
+      <home>Manchester United</home>
+      <away>Manchester City</away>
+    </teams>
+    <result>1-1</result>
+    <kickoff_time>2023-10-02 12:30:00</kickoff_time>
+  </match>
+    <match>
+    <competition>Premier League</competition>
+    <selectedCompetitionId>1</selectedCompetitionId>
+    <matchday>2</matchday>
+    <teams>
+      <home>Manchester United</home>
+      <away>Manchester City</away>
+    </teams>
+    <result>2-1</result>
+    <kickoff_time>2023-10-03 11:30:00</kickoff_time>
+  </match>
+  <match>
+    <competition>La Liga</competition>
+    <selectedCompetitionId>2</selectedCompetitionId>
+    <matchday>3</matchday>
+    <teams>
+      <home>Real Madrid</home>
+      <away>Barcelona</away>
+    </teams>
+    <result>1-1</result>
+    <kickoff_time>2023-09-30 20:00:00</kickoff_time>
+  </match>
+   <match>
+    <competition>La Liga</competition>
+    <selectedCompetitionId>2</selectedCompetitionId>
+    <matchday>1</matchday>
+    <teams>
+      <home>Real Madrid</home>
+      <away>Barcelona</away>
+    </teams>
+    <result>1-1</result>
+    <kickoff_time>2023-09-30 20:00:00</kickoff_time>
+  </match>
+   <match>
+    <competition>La Liga</competition>
+    <selectedCompetitionId>2</selectedCompetitionId>
+    <matchday>2</matchday>
+    <teams>
+      <home>Real Madrid</home>
+      <away>Barcelona</away>
+    </teams>
+    <result>1-1</result>
+    <kickoff_time>2023-09-30 20:00:00</kickoff_time>
+  </match>
+   <match>
+    <competition>La Liga</competition>
+    <selectedCompetitionId>2</selectedCompetitionId>
+    <matchday>2</matchday>
+    <teams>
+      <home>Real Madrid</home>
+      <away>Barcelona</away>
+    </teams>
+    <result>1-1</result>
+    <kickoff_time>2023-09-30 20:00:00</kickoff_time>
+  </match>
+   <match>
+    <competition>La Liga</competition>
+    <selectedCompetitionId>2</selectedCompetitionId>
+    <matchday>2</matchday>
+    <teams>
+      <home>Real Madrid</home>
+      <away>Barcelona</away>
+    </teams>
+    <result>1-1</result>
+    <kickoff_time>2023-09-30 20:00:00</kickoff_time>
+  </match>
+  <match>
+    <competition>Bundesliga</competition>
+    <selectedCompetitionId>3</selectedCompetitionId>
+    <matchday>1</matchday>
+    <teams>
+      <home>Real Madrid</home>
+      <away>Barcelona</away>
+    </teams>
+    <result>1-1</result>
+    <kickoff_time>2023-09-30 20:00:00</kickoff_time>
+  </match>
+   <match>
+    <competition>Ligue 1</competition>
+    <selectedCompetitionId>4</selectedCompetitionId>
+    <matchday>1</matchday>
+    <teams>
+      <home>Real Madrid</home>
+      <away>Barcelona</away>
+    </teams>
+    <result>1-0</result>
+    <kickoff_time>2023-09-30 20:00:00</kickoff_time>
+  </match>
+   <match>
+    <competition>Ligue 1</competition>
+    <selectedCompetitionId>4</selectedCompetitionId>
+    <matchday>1</matchday>
+    <teams>
+      <home>Real Madrid</home>
+      <away>Manchester United</away>
+    </teams>
+    <result>2-0</result>
+    <kickoff_time>2023-09-30 20:00:00</kickoff_time>
+  </match>
+</matches>

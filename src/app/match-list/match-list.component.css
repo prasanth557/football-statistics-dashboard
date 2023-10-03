@@ -1,0 +1,48 @@
+.match-list {
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  h2 {
+    margin-bottom: 10px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .match-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .match-info p {
+    padding: 10px;
+    font-size: large;
+  }
+
+.mat-mdc-table tbody, .mat-mdc-table tfoot, .mat-mdc-table thead, .mat-mdc-cell, .mat-mdc-footer-cell, .mat-mdc-header-row, .mat-mdc-row, .mat-mdc-footer-row, .mat-mdc-table .mat-mdc-header-cell {
+    background: inherit;
+    font-size: x-large;
+    padding: 10px;
+}
+h2 {
+    margin-bottom: 10px;
+    font-size: x-large;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: large;
+}
