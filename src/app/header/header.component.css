@@ -1,0 +1,12 @@
+.header-styles{
+ 
+    background-color: #f2f5f9; /* Background color */
+    color: #080101; /* Text color */
+    padding: 10px 20px; /* Padding to create space around the header */
+    text-align: left; /* Left align the text */
+    font-size: 154px; /* Font size */
+    font-weight: bold; /* Make the text bold */
+    text-transform: uppercase; /* Convert text to uppercase */
+    letter-spacing: 2px; /* Add letter spacing */
+    /* Add other styles as needed to make it stylish */
+}

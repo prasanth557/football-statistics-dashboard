@@ -9,7 +9,7 @@ This is an Angular application that displays football matches information from a
 - [Project Structure](https://github.com/prasanth557/football-statistics-dashboard#project-structure)
 - [Architecture](https://github.com/prasanth557/football-statistics-dashboard#architecture)
 - [Installation](https://github.com/prasanth557/football-statistics-dashboard#installation)
-- [Development Server](https://github.com/prasanth557/football-statistics-dashboard#dev-server)
+- [Development Server](https://github.com/prasanth557/football-statistics-dashboard#development-server)
 
 ## Requirements
 
@@ -39,34 +39,35 @@ The project structure includes the following components:
 
 ## Architecture
 
-![Architecture](https://github.com/sanginchun/football-dashboard/blob/master/readme-img/architecture.png)
+![Architecture](https://github.com/prasanth557/football-statistics-dashboard/blob/main/readme-img/dataflow-architecture.png)
 
-- [index.html](https://github.com/sanginchun/football-dashboard/blob/master/index.html): entry point
+- [App Initialization](https://github.com/sanginchun/football-dashboard/blob/master/index.html): entry point
 
-- [App.js](https://github.com/sanginchun/football-dashboard/blob/master/src/App.js): controls entire application
+- [Component Initialization](https://github.com/sanginchun/football-dashboard/blob/master/src/App.js): controls entire application
 
-- [model.js](https://github.com/sanginchun/football-dashboard/blob/master/src/model.js): parse and format data
+- [Header and Footer Display](https://github.com/sanginchun/football-dashboard/blob/master/src/model.js): parse and format data
 
-- [api.js](https://github.com/sanginchun/football-dashboard/blob/master/src/api/api.js): makes api call and takes control of cache storage
+- [Routing Initialization](https://github.com/sanginchun/football-dashboard/blob/master/src/api/api.js): makes api call and takes control of cache storage
 
 - [components](https://github.com/sanginchun/football-dashboard/tree/master/src/components)
 
-  - [SideBar](https://github.com/sanginchun/football-dashboard/tree/master/src/components/sidebar)
+  - [Competitions Page (Initial View)](https://github.com/sanginchun/football-dashboard/tree/master/src/components/sidebar)
 
-    - [Logo](https://github.com/sanginchun/football-dashboard/tree/master/src/components/sidebar/logo)
-    - [UserNav](https://github.com/sanginchun/football-dashboard/tree/master/src/components/sidebar/user-nav): user profile, buttons (Sign in, Sign out, Delete account)
-    - [MainNav](https://github.com/sanginchun/football-dashboard/tree/master/src/components/sidebar/main-nav): main nav of the app
-    - [SideBarBtn](https://github.com/sanginchun/football-dashboard/tree/master/src/components/sidebar/sidebar-btn): activated on mobile devices
+   - [User Interaction](https://github.com/sanginchun/football-dashboard/tree/master/src/components/sidebar/logo)
+    - [Data Request](https://github.com/sanginchun/football-dashboard/tree/master/src/components/sidebar/user-nav): user profile, buttons (Sign in, Sign out, Delete account)
+    - [Competition Data Retrieval](https://github.com/sanginchun/football-dashboard/tree/master/src/components/sidebar/main-nav): main nav of the app
+    - [Data Presentation](https://github.com/sanginchun/football-dashboard/tree/master/src/components/sidebar/sidebar-btn): activated on mobile devices
 
-  - [MainContainer](https://github.com/sanginchun/football-dashboard/tree/master/src/components/main-container): main display area
+  - [User Navigation](https://github.com/sanginchun/football-dashboard/tree/master/src/components/main-container): main display area
 
-    - [MainHeader](https://github.com/sanginchun/football-dashboard/tree/master/src/components/main-container/main-header)
-    - [Controller](https://github.com/sanginchun/football-dashboard/tree/master/src/components/main-container/controller): activated on custom tab, controls edit functions
-    - [MainContent](https://github.com/sanginchun/football-dashboard/tree/master/src/components/main-container/main-content): main content area; includes content(card) components and utility components such as buttons, datepicker, checkbox
+    - [Matches Page](https://github.com/sanginchun/football-dashboard/tree/master/src/components/main-container/main-header)
+    - [User Interaction (Matches Page)](https://github.com/sanginchun/football-dashboard/tree/master/src/components/main-container/controller): activated on custom tab, controls edit functions
+    - [Data Request (Matches Page):](https://github.com/sanginchun/football-dashboard/tree/master/src/components/main-container/main-content): main content area; includes content(card) components and utility components such as buttons, datepicker, checkbox
 
-  - [Spinner](https://github.com/sanginchun/football-dashboard/tree/master/src/components/Spinner)
+  - [Match Data Retrieval](https://github.com/sanginchun/football-dashboard/tree/master/src/components/Spinner)
 
-- [others](https://github.com/sanginchun/football-dashboard/tree/master/src/others/): config, helper, firebase config
+- [Data Presentation (Matches Page)](https://github.com/sanginchun/football-dashboard/tree/master/src/others/): config, helper, firebase config
+- [User Session End](https://github.com/sanginchun/football-dashboard/tree/master/src/others/): config, helper, firebase config
 
 ## Installation
 
@@ -99,14 +100,6 @@ Run `ng generate component component-name` to generate a new component. You can 
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
 ## Further help
 
