@@ -13,6 +13,7 @@ export class MatchService {
     this.getXmlString();
   }
 
+  //converts xml data to json data
   getXmlString() {
     var parsedString = '';
     this.http
@@ -38,6 +39,7 @@ export class MatchService {
     return parsedString  = this.competetionData;
   }
 
+  //filters data from all competetions based on selectedCompetitionId and matchday
   getMatches(competitionId: string, matchday: any) {
     var matchData = this.competetionData.filter(
       (x: { selectedCompetitionId: string; matchday: any }) =>
