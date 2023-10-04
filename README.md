@@ -1,6 +1,14 @@
 # Football Matches App
 
 This is an Angular application that displays football matches information from an XML data source. It allows users to select a competition and a matchday to view the list of matches, sorted by kickoff time.
+## Table of Contents
+
+- [Requirements](https://github.com/sanginchun/football-matches-app#Requirements)
+- [Technologies Used](https://github.com/sanginchun/football-dashboard#technologies-used)
+- [Live Demo](https://github.com/sanginchun/football-dashboard#live-demo)
+- [App Contents](https://github.com/sanginchun/football-dashboard#app-contents)
+- [Architecture](https://github.com/sanginchun/football-dashboard#architecture)
+- [Dev Environment](https://github.com/sanginchun/football-dashboard#dev-environment)
 
 ## Requirements
 
@@ -37,7 +45,7 @@ The project structure includes the following components:
 
 2. Navigate to the project folder:
 
-   cd football-matches-app
+   cd football-statistics-dashboard
 
 3. Install dependencies:
    
@@ -45,7 +53,7 @@ The project structure includes the following components:
 4. Start the development server:
 
    ng serve
-   
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.4.
 
 ## Development server
