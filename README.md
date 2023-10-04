@@ -3,12 +3,13 @@
 This is an Angular application that displays football matches information from an XML data source. It allows users to select a competition and a matchday to view the list of matches, sorted by kickoff time.
 ## Table of Contents
 
-- [Requirements](https://github.com/sanginchun/football-matches-app#Requirements)
-- [Technologies Used](https://github.com/sanginchun/football-dashboard#technologies-used)
-- [Live Demo](https://github.com/sanginchun/football-dashboard#live-demo)
-- [App Contents](https://github.com/sanginchun/football-dashboard#app-contents)
-- [Architecture](https://github.com/sanginchun/football-dashboard#architecture)
-- [Dev Environment](https://github.com/sanginchun/football-dashboard#dev-environment)
+- [Requirements](https://github.com/prasanth557/football-statistics-dashboard#Requirements)
+- [Technologies Used](https://github.com/prasanth557/football-statistics-dashboard#technologies-used)
+- [Features](https://github.com/prasanth557/football-statistics-dashboard#features)
+- [Project Structure](https://github.com/prasanth557/football-statistics-dashboard#project-structure)
+- [Architecture](https://github.com/prasanth557/football-statistics-dashboard#architecture)
+- [Installation](https://github.com/prasanth557/football-statistics-dashboard#installation)
+- [Development Server](https://github.com/prasanth557/football-statistics-dashboard#dev-server)
 
 ## Requirements
 
@@ -35,6 +36,37 @@ The project structure includes the following components:
 - `match-list`: The component that displays the list of matches.
 - `services`: Contains services for fetching and managing data.
 - `assets`: You can place your XML data file or other static assets here.
+
+## Architecture
+
+![Architecture](https://github.com/sanginchun/football-dashboard/blob/master/readme-img/architecture.png)
+
+- [index.html](https://github.com/sanginchun/football-dashboard/blob/master/index.html): entry point
+
+- [App.js](https://github.com/sanginchun/football-dashboard/blob/master/src/App.js): controls entire application
+
+- [model.js](https://github.com/sanginchun/football-dashboard/blob/master/src/model.js): parse and format data
+
+- [api.js](https://github.com/sanginchun/football-dashboard/blob/master/src/api/api.js): makes api call and takes control of cache storage
+
+- [components](https://github.com/sanginchun/football-dashboard/tree/master/src/components)
+
+  - [SideBar](https://github.com/sanginchun/football-dashboard/tree/master/src/components/sidebar)
+
+    - [Logo](https://github.com/sanginchun/football-dashboard/tree/master/src/components/sidebar/logo)
+    - [UserNav](https://github.com/sanginchun/football-dashboard/tree/master/src/components/sidebar/user-nav): user profile, buttons (Sign in, Sign out, Delete account)
+    - [MainNav](https://github.com/sanginchun/football-dashboard/tree/master/src/components/sidebar/main-nav): main nav of the app
+    - [SideBarBtn](https://github.com/sanginchun/football-dashboard/tree/master/src/components/sidebar/sidebar-btn): activated on mobile devices
+
+  - [MainContainer](https://github.com/sanginchun/football-dashboard/tree/master/src/components/main-container): main display area
+
+    - [MainHeader](https://github.com/sanginchun/football-dashboard/tree/master/src/components/main-container/main-header)
+    - [Controller](https://github.com/sanginchun/football-dashboard/tree/master/src/components/main-container/controller): activated on custom tab, controls edit functions
+    - [MainContent](https://github.com/sanginchun/football-dashboard/tree/master/src/components/main-container/main-content): main content area; includes content(card) components and utility components such as buttons, datepicker, checkbox
+
+  - [Spinner](https://github.com/sanginchun/football-dashboard/tree/master/src/components/Spinner)
+
+- [others](https://github.com/sanginchun/football-dashboard/tree/master/src/others/): config, helper, firebase config
 
 ## Installation
 
