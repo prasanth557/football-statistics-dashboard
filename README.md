@@ -39,35 +39,35 @@ The project structure includes the following components:
 
 ## Architecture
 
-![Architecture](https://github.com/prasanth557/football-statistics-dashboard/blob/main/readme-img/dataflow-architecture.png)
+![Architecture](https://github.com/prasanth557/football-statistics-dashboard/blob/main/readme-img/dataflow_architecture.png)
 
-- [App Initialization](https://github.com/sanginchun/football-dashboard/blob/master/index.html): entry point
+- [App Initialization](index.html)(https://github.com/prasanth557/football-statistics-dashboard/blob/main/index.html): entry point
 
-- [Component Initialization](https://github.com/sanginchun/football-dashboard/blob/master/src/App.js): controls entire application
+- [Component Initialization (app.module.ts)](https://github.com/prasanth557/football-statistics-dashboard/blob/main/src/app.module.ts): Initialises components in application
 
-- [Header and Footer Display](https://github.com/sanginchun/football-dashboard/blob/master/src/model.js): parse and format data
+- [Header and Footer Display](https://github.com/prasanth557/football-statistics-dashboard/blob/main/src/app/header): Displays header component
 
-- [Routing Initialization](https://github.com/sanginchun/football-dashboard/blob/master/src/api/api.js): makes api call and takes control of cache storage
+- [Routing Initialization](https://github.com/prasanth557/football-statistics-dashboard/blob/main/src/app/app-routing.module.ts): makes navigation from one component to another through routing
 
-- [components](https://github.com/sanginchun/football-dashboard/tree/master/src/components)
+- [components](https://github.com/prasanth557/football-statistics-dashboard/blob/main/src/app)
 
-  - [Competitions Page (Initial View)](https://github.com/sanginchun/football-dashboard/tree/master/src/components/sidebar)
+  - [Competitions Page (Initial View)](https://github.com/prasanth557/football-statistics-dashboard/blob/main/src/app/competetion-list)
 
-   - [User Interaction](https://github.com/sanginchun/football-dashboard/tree/master/src/components/sidebar/logo)
-    - [Data Request](https://github.com/sanginchun/football-dashboard/tree/master/src/components/sidebar/user-nav): user profile, buttons (Sign in, Sign out, Delete account)
-    - [Competition Data Retrieval](https://github.com/sanginchun/football-dashboard/tree/master/src/components/sidebar/main-nav): main nav of the app
-    - [Data Presentation](https://github.com/sanginchun/football-dashboard/tree/master/src/components/sidebar/sidebar-btn): activated on mobile devices
+   - [User Interaction](https://github.com/prasanth557/football-statistics-dashboard/blob/main/src/app/competetion-list)
+    - [Data Request(component.service)](https://github.com/prasanth557/football-statistics-dashboard/blob/main/src/app/component.service.ts): Fetches data from service and displays in UI dropdowns
+    - [Competition Data Retrieval](https://github.com/prasanth557/football-statistics-dashboard/blob/main/src/app/competetion-list): main page data of the app
+    - [Data Presentation](https://github.com/prasanth557/football-statistics-dashboard/blob/main/src/app/competetion-list): Data will be appeared in drop downs
 
-  - [User Navigation](https://github.com/sanginchun/football-dashboard/tree/master/src/components/main-container): main display area
+  - [User Navigation](https://github.com/prasanth557/football-statistics-dashboard/blob/main/src/app): User clicks on serch button navigates to matches component
 
-    - [Matches Page](https://github.com/sanginchun/football-dashboard/tree/master/src/components/main-container/main-header)
-    - [User Interaction (Matches Page)](https://github.com/sanginchun/football-dashboard/tree/master/src/components/main-container/controller): activated on custom tab, controls edit functions
-    - [Data Request (Matches Page):](https://github.com/sanginchun/football-dashboard/tree/master/src/components/main-container/main-content): main content area; includes content(card) components and utility components such as buttons, datepicker, checkbox
+    - [Matches Page](https://github.com/prasanth557/football-statistics-dashboard/blob/main/src/app/match-list)
+    - [User Interaction (Matches Page)](https://github.com/prasanth557/football-statistics-dashboard/blob/main/src/app/match-list): activated on new tab, controls sort functions
+    - [Data Request (Matches Page):](https://github.com/prasanth557/football-statistics-dashboard/blob/main/src/app/match-list): main content area; includes Match-list component
 
-  - [Match Data Retrieval](https://github.com/sanginchun/football-dashboard/tree/master/src/components/Spinner)
+  - [Match Data Retrieval](https://github.com/prasanth557/football-statistics-dashboard/blob/main/src/app/match-list)
 
-- [Data Presentation (Matches Page)](https://github.com/sanginchun/football-dashboard/tree/master/src/others/): config, helper, firebase config
-- [User Session End](https://github.com/sanginchun/football-dashboard/tree/master/src/others/): config, helper, firebase config
+- [Data Presentation (Matches Page)](https://github.com/prasanth557/football-statistics-dashboard/blob/main/src/app/match-list): data retrieval and display in table 
+- [User Session End](https://github.com/prasanth557/football-statistics-dashboard/blob/main/src/app/match-list): config, helper, Git config
 
 ## Installation
 
