@@ -39,7 +39,7 @@ The project structure includes the following components:
 
 ## Architecture
 
-![Architecture](https://github.com/prasanth557/football-statistics-dashboard/blob/master/readme-img/dataflow-architecture.png)
+![Architecture](https://github.com/prasanth557/football-statistics-dashboard/blob/master/readme-img/dataflow_architecture.png)
 
 - [App Initialization](https://github.com/sanginchun/football-dashboard/blob/master/index.html): entry point
 
