@@ -43,7 +43,7 @@ The project structure includes the following components:
 
 - [App Initialization(index.html)](https://github.com/prasanth557/football-statistics-dashboard/blob/main/index.html): entry point
 
-- [Component Initialization (app.module.ts)](https://github.com/prasanth557/football-statistics-dashboard/blob/main/src/app.module.ts): Initialises components in application
+- [Component Initialization (app.module.ts)](https://github.com/prasanth557/football-statistics-dashboard/blob/main/src/app/app.module.ts): Initialises components in application
 
 - [Header and Footer Display](https://github.com/prasanth557/football-statistics-dashboard/blob/main/src/app/header): Displays header component
 
