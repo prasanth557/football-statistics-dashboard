@@ -56,9 +56,9 @@ The project structure includes the following components:
    - [User Interaction](https://github.com/prasanth557/football-statistics-dashboard/blob/main/src/app/competetion-list)
     - [Data Request(component.service)](https://github.com/prasanth557/football-statistics-dashboard/blob/main/src/app/component.service.ts): Fetches data from service and displays in UI dropdowns
     - [Competition Data Retrieval](https://github.com/prasanth557/football-statistics-dashboard/blob/main/src/app/competetion-list): main page data of the app
-    - [Data Presentation](https://github.com/sanginchun/football-dashboard/tree/master/src/components/sidebar/sidebar-btn): activated on mobile devices
+    - [Data Presentation](https://github.com/prasanth557/football-statistics-dashboard/blob/main/src/app/competetion-list): Data will be appeared in drop downs
 
-  - [User Navigation](https://github.com/prasanth557/football-statistics-dashboard/blob/main/src/app): main display area
+  - [User Navigation](https://github.com/prasanth557/football-statistics-dashboard/blob/main/src/app): User clicks on serch button navigates to matches component
 
     - [Matches Page](https://github.com/prasanth557/football-statistics-dashboard/blob/main/src/app/match-list)
     - [User Interaction (Matches Page)](https://github.com/prasanth557/football-statistics-dashboard/blob/main/src/app/match-list): activated on new tab, controls sort functions
