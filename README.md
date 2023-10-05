@@ -41,33 +41,47 @@ The project structure includes the following components:
 
 ![Architecture](https://github.com/prasanth557/football-statistics-dashboard/blob/main/readme-img/dataflow_architecture.png)
 
-- [App Initialization(index.html)](https://github.com/prasanth557/football-statistics-dashboard/blob/main/index.html): entry point
+- [App Initialization(index.html)](https://github.com/prasanth557/football-statistics-dashboard/blob/main/index.html): When the application is initialized, the Angular framework loads the root module (usually AppModule).
 
-- [Component Initialization (app.module.ts)](https://github.com/prasanth557/football-statistics-dashboard/blob/main/src/app/app.module.ts): Initialises components in application
+- [Component Initialization (app.module.ts)](https://github.com/prasanth557/football-statistics-dashboard/blob/main/src/app/app.module.ts): The root component (usually AppComponent) is initialized, and it typically contains the app's layout structure.
+  The AppComponent includes the <router-outlet></router-outlet> tag, which acts as a placeholder for rendering other components based on routing.
 
-- [Header and Footer Display](https://github.com/prasanth557/football-statistics-dashboard/blob/main/src/app/header): Displays header component
 
-- [Routing Initialization](https://github.com/prasanth557/football-statistics-dashboard/blob/main/src/app/app-routing.module.ts): makes navigation from one component to another through routing
+- [Header and Footer Display](https://github.com/prasanth557/football-statistics-dashboard/blob/main/src/app/header): The HeaderComponent and FooterComponent are initialized and displayed by the AppComponent
+
+- [Routing Initialization](https://github.com/prasanth557/football-statistics-dashboard/blob/main/src/app/app-routing.module.ts): Angular's router module is initialized, and the routes defined in the app-routing module are configured.
 
 - [components](https://github.com/prasanth557/football-statistics-dashboard/blob/main/src/app)
-
+   
   - [Competitions Page (Initial View)](https://github.com/prasanth557/football-statistics-dashboard/blob/main/src/app/competetion-list)
+      When the app starts, the default route (/competitions) is usually loaded.
+      The CompetitionListComponent is initialized and displayed in the <router-outlet></router-outlet>.
 
    - [User Interaction](https://github.com/prasanth557/football-statistics-dashboard/blob/main/src/app/competetion-list)
-    - [Data Request(component.service)](https://github.com/prasanth557/football-statistics-dashboard/blob/main/src/app/component.service.ts): Fetches data from service and displays in UI dropdowns
-    - [Competition Data Retrieval](https://github.com/prasanth557/football-statistics-dashboard/blob/main/src/app/competetion-list): main page data of the app
-    - [Data Presentation](https://github.com/prasanth557/football-statistics-dashboard/blob/main/src/app/competetion-list): Data will be appeared in drop downs
+      •	The user interacts with the CompetitionListComponent by selecting a competition and matchday.
+      •	The selected data triggers an event or function, such as onSearch().
 
-  - [User Navigation](https://github.com/prasanth557/football-statistics-dashboard/blob/main/src/app): User clicks on serch button navigates to matches component
+    - [Data Request(component.service)](https://github.com/prasanth557/football-statistics-dashboard/blob/main/src/app/component.service.ts): The onSearch() function in CompetitionListComponent sends a request to the CompetitionService to fetch a list of competitions.
+    - [Competition Data Retrieval](https://github.com/prasanth557/football-statistics-dashboard/blob/main/src/app/competetion-list): The CompetitionService fetches competition data from the XML source (or API) and returns it as an Observable.
+    - [Data Presentation](https://github.com/prasanth557/football-statistics-dashboard/blob/main/src/app/competetion-list):  The fetched competition data is displayed in the CompetitionListComponent
+
+  - [User Navigation](https://github.com/prasanth557/football-statistics-dashboard/blob/main/src/app): The user may choose to navigate to the "Matches" page (or another route) by interacting with the UI.
 
     - [Matches Page](https://github.com/prasanth557/football-statistics-dashboard/blob/main/src/app/match-list)
-    - [User Interaction (Matches Page)](https://github.com/prasanth557/football-statistics-dashboard/blob/main/src/app/match-list): activated on new tab, controls sort functions
-    - [Data Request (Matches Page):](https://github.com/prasanth557/football-statistics-dashboard/blob/main/src/app/match-list): main content area; includes Match-list component
+       •	If the user navigates to the "Matches" page, the route /matches/:competitionId/:matchday is activated.
+       •	The MatchListComponent is initialized and displayed in the <router-outlet></router-outlet>.
 
-  - [Match Data Retrieval](https://github.com/prasanth557/football-statistics-dashboard/blob/main/src/app/match-list)
+    - [User Interaction (Matches Page)](https://github.com/prasanth557/football-statistics-dashboard/blob/main/src/app/match-list): The user can further interact with the MatchListComponent by viewing matches and their details.
+    - [Data Request (Matches Page):](https://github.com/prasanth557/football-statistics-dashboard/blob/main/src/app/match-list): The MatchListComponent can send requests to the MatchService to fetch match data based on competition and matchday.
 
-- [Data Presentation (Matches Page)](https://github.com/prasanth557/football-statistics-dashboard/blob/main/src/app/match-list): data retrieval and display in table 
-- [User Session End](https://github.com/prasanth557/football-statistics-dashboard/blob/main/src/app/match-list): config, helper, Git config
+  - [Match Data Retrieval](https://github.com/prasanth557/football-statistics-dashboard/blob/main/src/app/match-list): The MatchService fetches match data from the XML source (or API) and returns it as an Observable
+
+- [Data Presentation (Matches Page)](https://github.com/prasanth557/football-statistics-dashboard/blob/main/src/app/match-list): The fetched match data is displayed in the MatchListComponent, sorted by kickoff time.
+- [User Session End](https://github.com/prasanth557/football-statistics-dashboard/blob/main/src/app/match-list):
+   •	The user session continues as they interact with the application.
+   •	The user can navigate between components, view matches, and perform other actions.
+   •	Eventually, the user session ends when they close the application or navigate away.
+
 
 ## Installation
 
